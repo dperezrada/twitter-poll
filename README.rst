@@ -18,7 +18,8 @@ To install
 ----------
 ::
 
-    easy_install webtest bottle nose lxml
+    git clone git@github.com:dperezrada/twitter-poll.git
+    python setup.py develop
     cd /tmp
     git clone git@github.com:rlisagor/freshen
     cd freshen
