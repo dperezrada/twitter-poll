@@ -1,0 +1,1 @@
+<div><label>Total</label><span id="total">{{total}}</span></div>
