@@ -1,3 +1,11 @@
+Authors
+=======
+
+* Luis Felipe Álvarez (@lfalvarez)
+* Nicolás Dujovne (@ndujovne)
+* Daniel Pérez (@dperezrada)
+* Felipe Valverde (@fvalverd)
+
 Requirements
 ============
 * webtest
@@ -16,5 +24,5 @@ Tests
 =====
 ::
 
-	nosetests --with-freshen --list-undefined -v
+	nosetests --with-freshen -v
 
