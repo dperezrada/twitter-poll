@@ -9,3 +9,4 @@ Feature: Get total votes
     When I tweet '#dojovote http://ciudadanointeligente.org' as 'lfalvarez'
       And I enter the main page 
     Then I see 1 vote
+    

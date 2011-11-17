@@ -1,1 +1,1 @@
-<div><label>Total</label><span id="total">{{total}}</span></div>
+<div><label>Total</label><span id="total_agil">{{total}}</span></div>

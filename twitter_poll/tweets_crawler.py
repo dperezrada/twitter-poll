@@ -1,2 +1,4 @@
 class TweetsCrawler(object):
-    pass
+    @staticmethod
+    def get_tweets():
+        return []
