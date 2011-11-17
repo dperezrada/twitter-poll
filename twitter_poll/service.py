@@ -6,27 +6,23 @@ import json
 import bottle
 from bottle import request, redirect
 
-bottle.TEMPLATE_PATH.insert(0,os.path.abspath(__file__))
+from twitter_poll.tweets_crawler import TweetsCrawler
 
-
+#Controllers
 @bottle.route('/')
 @bottle.view('templates/main')
 def main():
-    try:
-      tweets = json.loads(open('fixtures/tweets.json').read())
-    except:
-      tweets = []
+    tweets = TweetsCrawler.get_tweets()
     return dict(total = len(tweets))
 
-    
-bottle.debug(True)
 
+#Config
+bottle.TEMPLATE_PATH.insert(0,os.path.dirname(os.path.abspath(__file__)))
+bottle.debug(True)
 application = bottle.default_app.pop()
 application.catchall = False
 
-
-# bottle.run(host='localhost', port=8099, reloader = True)
-
+#To run
 def main():
     reload = 'True'
     web_port = 8080

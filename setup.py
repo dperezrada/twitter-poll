@@ -3,7 +3,7 @@ import sys, os
 
 version = '0.1'
 
-setup(name='twitter-poll',
+setup(name='twitter_poll',
       version=version,
       description="",
       long_description="""\
