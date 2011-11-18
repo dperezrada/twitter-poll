@@ -19,6 +19,7 @@ To install
 ::
 
     git clone git@github.com:dperezrada/twitter-poll.git
+    cd twitter-poll
     python setup.py develop
     cd /tmp
     git clone git@github.com:rlisagor/freshen
